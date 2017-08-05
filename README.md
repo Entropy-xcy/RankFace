@@ -1,5 +1,5 @@
 # Rank Face
-
+A deep learning based model to judge the AQ, Appearance Quotient, of faces.
 ## Installation
 
 ```
