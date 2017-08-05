@@ -10,14 +10,15 @@ import csv
 from scipy.stats import norm
 
 
+def get_percentage(score):
+    for i in range(len(list)):
+        if score < float(list[i]):
+            return (i + 1.0) / 500.0
+
+
 def get_AQ(score):
     score = float(score)
-    i = 0
-    for i in range(len(list)):
-        i += 1
-        if score < float(list[i]):
-            break
-    percentage = i / 500
+    percentage = get_percentage(score)
     z_score = norm.ppf(percentage)
     return int(105 + (z_score * 24))
 
@@ -55,7 +56,7 @@ def main():
 
 model = load_model('faceRank.h5')
 list = []
-with open('./label.csv') as csvfile:
+with open('label.csv') as csvfile:
     reader = csv.DictReader(csvfile)
     for row in reader:
         list.append(row['Attractiveness label'])

@@ -12,5 +12,5 @@ if __name__ == '__main__':
             faces, coordinates = fd.get_face_image(img)
             for i in range(len(faces)):
                 score = predict.predict_cv_img(faces[i])
-                cv2.putText(img_drawed, str(predict.get_AQ(score[0][0])), coordinates[i], font, 0.8, (255, 0, 0), 2, cv2.LINE_AA)
+                cv2.putText(img_drawed, str(predict.get_AQ(score[0][0])), coordinates[i], font, 0.8, (255, 0, 0), 2)
             fd.show(img_drawed)
