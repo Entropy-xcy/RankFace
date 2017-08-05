@@ -3,7 +3,7 @@ A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For
 ## Installation
 
 ```
-pip install numpy scipy csv
+pip install numpy scipy
 pip install tensorflow keras
 pip install opencv
 git clone https://github.com/Entropy-xcy/RankFace
