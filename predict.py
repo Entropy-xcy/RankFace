@@ -17,7 +17,7 @@ def get_AQ(score):
             break
     percentage = i / 500
     z_score = norm.ppf(percentage)
-    return int(110 + (z_score * 24))
+    return int(105 + (z_score * 24))
 
 
 def load_image(file):
