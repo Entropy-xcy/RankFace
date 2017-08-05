@@ -6,7 +6,7 @@ def show(img):
     cv2.waitKey(0)
 
 
-def get_face_image(img, margin_extend_rate=0.1):
+def get_face_image(img, margin_extend_rate=0.3):
     faces = []
     coordinates = []
     faces_coordinate_ = face_cascade.detectMultiScale(

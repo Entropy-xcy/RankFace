@@ -5,6 +5,7 @@ import sys
 import os
 import cv2
 import csv
+from scipy.stats import norm
 
 
 def get_AQ(score):
@@ -15,7 +16,8 @@ def get_AQ(score):
         if score < float(list[i]):
             break
     percentage = i / 500
-
+    z_score = norm.ppf(percentage)
+    return int(110 + (z_score * 24))
 
 
 def load_image(file):
