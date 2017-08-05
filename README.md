@@ -1,5 +1,5 @@
 # Rank Face
-A deep learning based model to judge the AQ, Appearance Quotient, of faces.
+A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For Chinese Young Girls Only)
 ## Installation
 
 ```
@@ -13,12 +13,20 @@ wget http://entropy-xcy.bid/faceRank.h5
 
 ## Demo
 ```
-cd ./RankFace
 python main.py girls.jpg
 ```
+Here is the output
+![](demo.jpg)
 
 ## Training
-Dataset Not uploaded yet.
+It is highly recommended to train the model yourself. Some accuracy issues may happen if the platform you have is different from the trainer's.
+```
+wget http://entropy-xcy.bid/dataset.zip
+unzip dataset.zip
+rm dataset.zip
+# You may change parameters in the script.
+python train.py
+```
 
 ## Model Summary:
 ```
