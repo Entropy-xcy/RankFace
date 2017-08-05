@@ -20,7 +20,7 @@ def get_AQ(score):
     score = float(score)
     percentage = get_percentage(score)
     z_score = norm.ppf(percentage)
-    return int(105 + (z_score * 24))
+    return int(100 + (z_score * 24))
 
 
 def load_image(file):
