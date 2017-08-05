@@ -70,7 +70,7 @@ def main():
     model = make_network()
 
     model.compile(loss='mean_squared_error', optimizer='rmsprop', metrics=['mae'])
-    hist = model.fit(train_x, train_y, batch_size=32, epochs=500, verbose=1)
+    hist = model.fit(train_x, train_y, batch_size=32, epochs=200, verbose=1)
 
     model.evaluate(train_x, train_y)
     model.save('faceRank.h5')

@@ -40,7 +40,7 @@ def get_face_image(img, margin_extend_rate=0.3):
 
         roi = img[y_min:y_max, x_min:x_max]
         faces.append(roi)
-        coordinates.append((x_min, y_min))
+        coordinates.append((x, y))
         # print('FaceDetected')
 
     return faces, coordinates
