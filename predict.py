@@ -1,3 +1,5 @@
+from __future__ import print_function
+
 from keras.models import load_model
 from keras.preprocessing.image import load_img, img_to_array
 import numpy as np
