@@ -33,6 +33,18 @@ rm dataset.zip
 python train.py
 ```
 
+## Launch API Server
+A basic webpage or POST API server build with keras
+It may still work for mobile platforms
+![](webpage.jpg)
+```
+pip install werkzeug
+pip install flask
+# make sure that you already successfully launched the demo before the next step
+# The default port is 5000, you may change it as you wish in the code
+python API_server.py
+```
+
 ## Model Summary:
 ```
 _________________________________________________________________
