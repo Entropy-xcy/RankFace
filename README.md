@@ -1,5 +1,6 @@
 # Rank Face
-A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For Chinese Young Girls Only)
+A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For Chinese Young Girls Only)</br>
+Inspired by [Face Rank](https://github.com/Entropy-xcy/FaceRank)
 ## Installation
 
 ```
