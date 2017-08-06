@@ -1,6 +1,13 @@
 # Rank Face
 A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For Chinese Young Girls Only)</br>
 Inspired by [Face Rank](https://github.com/Entropy-xcy/FaceRank)
+
+## Inspiration
+#### [Face Rank](https://github.com/Entropy-xcy/FaceRank)
+My Repository is just a reversion of [Face Rank](https://github.com/Entropy-xcy/FaceRank). For more details check this fantastic repo.
+#### [SCUT-FBP](http://www.hcii-lab.net/data/SCUT-FBP/EN/introduce.html)
+This [Essay](http://www.hcii-lab.net/lianwen/Papers/[SMC%202015]SCUT-FBP-A%20Benchmark%20Dataset%20for%20Facial%20Beauty%20Perception.pdf) along with its dataset gave me great help in modeling and handling training issues.
+
 ## Installation
 
 ```
