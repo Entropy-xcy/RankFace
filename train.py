@@ -3,7 +3,6 @@ from __future__ import print_function
 from keras.models import Sequential
 from keras.layers.core import Dense, Dropout, Flatten, Activation
 from keras.layers.convolutional import Conv2D, MaxPooling2D
-from keras.preprocessing.image import load_img, img_to_array
 import cv2
 import os
 import numpy as np
@@ -70,7 +69,7 @@ def main():
     model = make_network()
 
     model.compile(loss='mean_squared_error', optimizer='rmsprop', metrics=['mae'])
-    hist = model.fit(train_x, train_y, batch_size=32, epochs=200, verbose=1)
+    hist = model.fit(train_x, train_y, batch_size=100, epochs=100, verbose=1)
 
     model.evaluate(train_x, train_y)
     model.save('faceRank.h5')

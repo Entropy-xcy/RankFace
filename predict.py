@@ -1,7 +1,6 @@
 from __future__ import print_function
 
-from keras.models import load_model
-from keras.preprocessing.image import load_img, img_to_array
+from keras.models import load_models
 import numpy as np
 import sys
 import os

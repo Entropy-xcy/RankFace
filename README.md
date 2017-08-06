@@ -6,6 +6,7 @@ A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For
 apt-get install python-dev python-pip -y
 pip install numpy scipy
 pip install tensorflow keras
+pip install h5py
 apt-get install python-opencv
 # for macOS use 'brew install opencv'
 # for Windows try the installation tutorial from opencv official website
@@ -24,6 +25,7 @@ Here is the output
 ## Training
 It is highly recommended to train the model yourself. Some accuracy issues may happen if the platform you have is different from the trainer's.
 ```
+rm ./faceRank.h5
 wget http://entropy-xcy.bid/dataset.zip
 unzip dataset.zip
 rm dataset.zip
