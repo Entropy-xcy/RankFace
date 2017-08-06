@@ -3,9 +3,12 @@ A deep learning based model to judge the AQ, Appearance Quotient, of faces. (For
 ## Installation
 
 ```
+apt-get install python-dev python-pip -y
 pip install numpy scipy
 pip install tensorflow keras
-pip install opencv
+apt-get install python-opencv
+# for macOS use 'brew install opencv'
+# for Windows try the installation tutorial from opencv official website
 git clone https://github.com/Entropy-xcy/RankFace
 cd ./RankFace
 wget http://entropy-xcy.bid/faceRank.h5
