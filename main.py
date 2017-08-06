@@ -3,6 +3,7 @@ import sys
 import predict
 import face_detection as fd
 
+
 if __name__ == '__main__':
     for i in sys.argv:
         if i.find('.jpg') != -1:

@@ -1,12 +1,25 @@
 from __future__ import print_function
 
-from keras.models import load_models
+from keras.models import load_model
 import numpy as np
 import sys
 import os
 import cv2
 import csv
 from scipy.stats import norm
+import face_detection as fd
+
+
+def save_predict_img(img_file, save_path):
+    img = cv2.imread(img_file)
+    img_drawed = fd.draw_faces(img)
+    font = cv2.FONT_HERSHEY_SIMPLEX
+    faces, coordinates = fd.get_face_image(img)
+    for i in range(len(faces)):
+        score = predict_cv_img(faces[i])
+        cv2.putText(img_drawed, str(get_AQ(score[0][0])), coordinates[i], font, 0.8, (255, 0, 0), 2)
+    cv2.imwrite(save_path, img_drawed)
+
 
 
 def get_percentage(score):

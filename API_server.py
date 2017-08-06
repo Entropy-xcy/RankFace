@@ -2,7 +2,7 @@
 import os
 from flask import Flask, request, url_for, send_from_directory
 from werkzeug import secure_filename
-import main
+import predict
 
 ALLOWED_EXTENSIONS = set(['png', 'jpg', 'jpeg', 'gif'])
 
@@ -40,7 +40,9 @@ def upload_file():
         if file and allowed_file(file.filename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
-            file_url = url_for('uploaded_file', filename=filename)
+            predict.save_predict_img(os.path.join(app.config['UPLOAD_FOLDER'], filename),
+                                  os.path.join(app.config['UPLOAD_FOLDER'], '#' + filename))
+            file_url = url_for('uploaded_file', filename='#' + filename)
             return '<br><img src=' + file_url + '>'
     return html
 
