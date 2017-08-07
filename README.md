@@ -10,8 +10,6 @@ This [Essay](http://www.hcii-lab.net/lianwen/Papers/[SMC%202015]SCUT-FBP-A%20Ben
 
 ## Installation
 
-**For Linux & macOS User**:
-
 ```shell
 apt-get install python-dev python-pip -y
 pip install -r requirements.txt
