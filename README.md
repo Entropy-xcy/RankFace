@@ -12,12 +12,12 @@ This [Essay](http://www.hcii-lab.net/lianwen/Papers/[SMC%202015]SCUT-FBP-A%20Ben
 
 ```shell
 apt-get install python-dev python-pip -y
+git clone https://github.com/Entropy-xcy/RankFace
+cd ./RankFace
 pip install -r requirements.txt
 apt-get install python-opencv
 # for macOS use 'brew install opencv'
 # for Windows try the installation tutorial from opencv official website
-git clone https://github.com/Entropy-xcy/RankFace
-cd ./RankFace
 wget http://entropy-xcy.bid/faceRank.h5
 ```
 
