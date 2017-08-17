@@ -1,5 +1,6 @@
 from __future__ import print_function
-
+import sys
+sys.path.append('/usr/local/lib/python2.7/site-packages/')
 from keras.models import load_model
 import numpy as np
 import sys
